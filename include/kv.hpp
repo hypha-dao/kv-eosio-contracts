@@ -3,6 +3,8 @@
 
 using namespace eosio;
 using std::string;
+namespace hypha
+{
 
 CONTRACT kv : public contract {
    public:
@@ -66,3 +68,4 @@ CONTRACT kv : public contract {
          return false;
       } 
 };
+}

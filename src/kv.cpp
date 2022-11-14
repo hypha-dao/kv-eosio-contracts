@@ -1,5 +1,8 @@
 #include <kv.hpp>
 
+namespace hypha
+{
+
 void kv::set ( const name& owner, 
                const name& key, 
                const string& value, 
@@ -39,3 +42,4 @@ void kv::erase ( const name& owner, const name& key) {
    kv_t.erase (kv_t.find(get_id(owner, key)));
 }
 
+}
